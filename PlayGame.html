@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Select random number and compare</p>
+
+<button onclick="document.getElementById('demo1').innerHTML = getRndInteger(1,100); document.getElementById('demo2').innerHTML = getRndInteger(1,100)">Play</button>
+
+<h1>you</h1>
+<p id="demo1"></p>
+<h2>computer</h2>
+<p id="demo2"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+function goBack() {
+  window.history.back();
+}
+</script>
+
+<button onclick="goBack()">Back</button>
+
+</body>
+</html>

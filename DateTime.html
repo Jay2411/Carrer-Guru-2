@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the DateTime.</p>
+
+<button onclick="displayDate()">DateTime</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+function goBack() {
+  window.history.back();
+}
+</script>
+
+<p id="demo"></p>
+<button onclick="goBack()">Back</button>
+
+</body>
+</html> 
